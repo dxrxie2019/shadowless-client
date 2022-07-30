@@ -3,6 +3,7 @@ package top.shadowless.client.mod;
 public abstract class Mod {
     private final String name;
     private final boolean enadle;
+    private int key;
 
     public Mod(String name , boolean enadle){
         this.name = name;
@@ -22,5 +23,12 @@ public abstract class Mod {
     public void update(){
 
     }
-    
+
+    public int getKey() {
+        return key;
+    }
+
+    public void setKey(int key) {
+        this.key = key;
+    }
 }

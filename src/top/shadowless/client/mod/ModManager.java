@@ -2,7 +2,7 @@ package top.shadowless.client.mod;
 
 import top.shadowless.client.mod.mods.movement.HUD;
 import top.shadowless.client.mod.mods.movement.SprintMod;
-
+import top.shadowless.client.mod.mods.movement.betterfps.BetterFps;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -21,5 +21,6 @@ public class ModManager {
     public void load(){
         mods.add(new SprintMod());
         mods.add(new HUD());
+        mods.add(new BetterFps());
     }
 }
